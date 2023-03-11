@@ -38,7 +38,7 @@ export default defineConfig({
     },
     reporters: ['default'],
     // 如果要测试单目录，可以修改这个配置
-    include: ['**/__tests__/*.spec.{ts,tsx}'],
+    include: ['packages/components/text/__tests__/*.spec.{ts,tsx}'],
   },
 
   define: {

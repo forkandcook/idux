@@ -1,0 +1,60 @@
+@import '../../style/mixins/reset.less';
+@import "./themes/default.variable.less";
+
+.@{text-prefix} {
+  .reset-component();
+
+  word-break: break-all;
+
+  
+  &-success {
+    color: @text-success-color;
+  }
+
+  &-warning {
+    color: @text-warning-color;
+  }
+
+  &-danger {
+    color: @text-danger-color;
+  }
+
+  &-secondary {
+    color: @text-secondary-color;
+  }
+
+  &-disabled {
+    color: @text-disabled-color;
+    cursor: not-allowed;
+    user-select: none;
+  }
+
+  code {
+    margin: 0 0.2em;
+    padding: 0.1em 0.2em;
+    font-size: 85%;
+    font-family: inherit;
+    background: @text-code-background;
+    border: 1px solid @text-code-border;
+    border-radius: 3px;
+  }
+
+  kbd {
+    margin: 0 0.2em;
+    padding: 0.1em 0.2em;
+    font-size: 90%;
+    font-family: inherit;
+    background: @text-code-background;
+    border: 1px solid  @text-code-border;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+  }
+  
+  mark {
+    background: @text-mark-background;
+  }
+
+  &-copy {
+    cursor: pointer;
+  }
+}
