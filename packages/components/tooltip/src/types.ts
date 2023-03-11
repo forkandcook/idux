@@ -27,10 +27,19 @@ export const tooltipProps = {
   title: String,
   trigger: ɵOverlayTriggerDef,
   zIndex: Number,
+  ellipsis: {
+    type: Object as PropType<Ellipsis>,
+    default: undefined,
+  },
 
   // events
   'onUpdate:visible': [Function, Array] as PropType<MaybeArray<(visible: boolean) => void>>,
 } as const
+
+export interface Ellipsis {
+  width: number
+  rows: number
+}
 
 export type TooltipProps = ExtractInnerPropTypes<typeof tooltipProps>
 export type TooltipPublicProps = ExtractPublicPropTypes<typeof tooltipProps>
